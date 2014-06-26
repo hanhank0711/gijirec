@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="./favicon.ico"/>
+	<link rel="stylesheet" media="screen" href="./css/bootstrap.min.css")">
+	<link rel="stylesheet" media="screen" href="./css/cover.css")">
+	<script src="./js/jquery-2.1.0.min.js" type="text/javascript"></script>
+	<script src="./js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="./js/core.js" type="text/javascript"></script>
+<meta charset="UTF-8">
+<title>議事REC</title>
+</head>
+<body>
+<h1>議事REC</h1>
+
+<div class="container">
+    <hr/><!-- Horizontal Line -->
+    <div class="row">
+	    <div class="col-md-2">
+	        <button type="button" class="btn btn-success btn-large btn-margin" data-toggle="modal" data-target="#addUserModal">additional participant</button>
+	    </div>
+	    <div class="row">
+            <div class="col-md-2">
+                <img id="image_state" src="./images/state_off.png" style="cursor: pointer" />
+                <span id="state">stopped.</span>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+		<div class="form-group">
+		   <div id="user_list" class="col-md-2" style="background-color: #F2F2F2;">
+		   </div>
+		    <div class="col-md-10">
+		        <textarea id="contents" class="form-control" rows="20" style="background-color: #F2F2F2;"></textarea>
+		    </div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="addUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Addtional Participant</h4>
+            </div>
+            <div class="modal-body">
+                <p>please enter user name</p>
+                <input type="text" id="user-name" class="" />
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="add-user" class="btn btn-primary">add</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
